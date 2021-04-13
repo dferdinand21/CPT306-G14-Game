@@ -5,22 +5,14 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.ide.rider": {
       "version": "2.0.7",
@@ -29,11 +21,7 @@
       "dependencies": {
         "com.unity.test-framework": "1.1.1"
       },
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.ide.visualstudio": {
       "version": "2.0.7",
@@ -42,18 +30,13 @@
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
       },
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.ide.vscode": {
       "version": "1.2.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
     },
     "com.unity.plasticscm-cn": {
@@ -62,9 +45,6 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.test-framework": {
       "version": "1.1.24",
@@ -75,11 +55,7 @@
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.textmeshpro": {
       "version": "3.0.4",
@@ -88,11 +64,7 @@
       "dependencies": {
         "com.unity.ugui": "1.0.0"
       },
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.timeline": {
       "version": "1.4.6",
@@ -104,11 +76,7 @@
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
-<<<<<<< Updated upstream
       "url": "https://packages-v2.unity.cn"
-=======
-      "url": "https://packages.unity.cn"
->>>>>>> Stashed changes
     },
     "com.unity.ugui": {
       "version": "1.0.0",
