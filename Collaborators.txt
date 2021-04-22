@@ -1,7 +1,7 @@
 This file is used to check whether all group members has access to this repo, please write your name down here:
 
 - David (and David from a different account)
-- Kangda_Hao (Chyaka)
+- Kangda_Hao(Chyaka)
 - Guanru.Lyu(Gary)
 - Junran Yang(jran-y) 
 - Chia-Ni Huang (Chereena)
