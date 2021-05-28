@@ -5,6 +5,8 @@ using UnityEngine;
 public class PuzzleDetection : MonoBehaviour
 {
     public GameObject planetObject;
+    public Transform pos;
+    bool spawned = false;
     //Rigidbody rigidbody;
 
     // Start is called before the first frame update
@@ -22,20 +24,34 @@ public class PuzzleDetection : MonoBehaviour
 
     void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.name == planetObject.gameObject.name) // if detector is detecting something that is not a player, set isEmpty as false
+        //if (collision.gameObject.name == planetObject.gameObject.name)
+        if (planetObject.gameObject.name.Contains(collision.gameObject.name)) // if detector detects something that is the wanted object
         {
             //Debug.Log("detected right object");
-
-            // move the detected object "into" the detector
-            collision.gameObject.transform.position = gameObject.transform.position;
-            // disable rigidbody
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-            rb.isKinematic = false;
-            // disable grab
-            collision.gameObject.GetComponent<ThrowObject>().enabled = false;
+            //collision.gameObject.SetActive(false);
+            //Destroy(collision.gameObject);
+            if (!spawned) // spawn replacement once, and deactivate
+            {
+                Instantiate(planetObject, pos.position, Quaternion.identity);
+                collision.gameObject.SetActive(false);
+                planetObject.SetActive(true);
+                spawned = true;
+                // move the detected object "into" the detector
+                //collision.gameObject.transform.position = pos.position;
+                // disable rigidbody
+                //Rigidbody rb = planetObject.GetComponent<Rigidbody>();
+                //rb.freezeRotation = true;
+                //rb.isKinematic = false;
+                // disable grab
+                //collision.gameObject.GetComponent<ThrowObject>().beingCarried = false;
+                //planetObject.GetComponent<ThrowObject>().enabled = false;
+                gameObject.SetActive(false);
+            }
+            
+            
         } else
         {
-            Debug.Log("Detected something, but is wrong thing");
+            //Debug.Log("Detected something, but is wrong thing");
         }
     }
 }
