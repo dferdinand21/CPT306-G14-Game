@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scene/Math room.unity
     guid: 19ec67a4c60fe5d458ea728780f44cd6
+  - enabled: 1
+    path: Assets/_Scene/Geography Classroom.unity
+    guid: 194540df0d1494d809a2d1b16b929996
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5448c2b4533722649bc32ace0c3a3b82, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 88e37e1e1165a3c4db868b63fceb189f, type: 2}
