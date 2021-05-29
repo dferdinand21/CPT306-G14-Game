@@ -1,6 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public enum GameState
+{
+    menu,
+    inGame,
+    paused,
+    postGame
+}
 
 public class GameManager : MonoBehaviour
 {
