@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scene/Start.unity
+    path: Assets/_Scene/TTL Room.unity
     guid: d21ed4f1436a3654ead1ab0fe7a8ab98
   - enabled: 1
     path: Assets/_Scene/Math room.unity
