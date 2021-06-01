@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public GameState currentGameState = GameState.menu();
+    public GameState currentGameState = GameState.menu;
 
     public Canvas menuCanvas;
     public Canvas inGameCanvas;
