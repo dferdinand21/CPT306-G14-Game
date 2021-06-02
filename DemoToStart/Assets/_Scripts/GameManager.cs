@@ -15,16 +15,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public GameState currentGameState = GameState.menu();
+    public GameState currentGameState = GameState.menu;
 
     public Canvas menuCanvas;
     public Canvas inGameCanvas;
-    public Canvas pausedCanvas;
+    public GameObject pausedCanvas;
     public Canvas postgameCanvas;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        currentGameState = GameState.menu;
+
+        pausedCanvas.SetActive(false);
     }
 
     void SetGameState(GameState newGameState)
@@ -34,7 +41,7 @@ public class GameManager : MonoBehaviour
             //setup Unity scene for menu state
             menuCanvas.enabled = true;
             inGameCanvas.enabled = false;
-            pausedCanvas.enabled = false;
+            pausedCanvas.SetActive(false);
             postgameCanvas.enabled = false;
         }
         else if (newGameState == GameState.inGame)
@@ -43,7 +50,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             menuCanvas.enabled = false;
             inGameCanvas.enabled = true;
-            pausedCanvas.enabled = false;
+            pausedCanvas.SetActive(false);
             postgameCanvas.enabled = false;
         }
         else if (newGameState == GameState.postGame)
@@ -53,17 +60,18 @@ public class GameManager : MonoBehaviour
             //setup Unity scene for gameOver state
             menuCanvas.enabled = false;
             inGameCanvas.enabled = false;
-            pausedCanvas.enabled = false;
+            pausedCanvas.SetActive(false);
             postgameCanvas.enabled = true;
         }
         else if (newGameState == GameState.paused)
         {
             //setup Unity scene for paused state
-            Time.timeScale = 0;
+            Time.timeScale = 0; // used to pause game, set this to 1 to continue again
             menuCanvas.enabled = false;
             inGameCanvas.enabled = false;
-            pausedCanvas.enabled = true;
+            pausedCanvas.SetActive(true);
             postgameCanvas.enabled = false;
+            // currently this works, but cannot activate pause menu somehow
         }
 
         currentGameState = newGameState;
@@ -94,7 +102,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentGameState == GameState.inGame && Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("g"))
         {
             PauseGame();
         }
