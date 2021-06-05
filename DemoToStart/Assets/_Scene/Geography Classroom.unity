@@ -2168,7 +2168,7 @@ PrefabInstance:
       objectReference: {fileID: 238612640}
     - target: {fileID: 6464462785634476143, guid: b72708dee78ea8441af13d509aabfc67, type: 3}
       propertyPath: m_Name
-      value: Keypad UI (1)
+      value: Keypad UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b72708dee78ea8441af13d509aabfc67, type: 3}
