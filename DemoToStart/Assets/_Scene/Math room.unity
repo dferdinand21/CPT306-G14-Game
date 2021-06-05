@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4509461, g: 0.50082254, b: 0.5744564, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2361,9 +2361,9 @@ MonoBehaviour:
   m_Text: "Welcome to the mini game - Division Water\nIn this game, you need to allocate
     the amount of water represented by the upper square according to the requirements
     of the lower square. There are also buttons at the pipe joints. The number of
-    the button represents the direction of the water flow. When the button is 1,
-    the water will flow evenly to the left and right sides. When the button is 0,
-    the water only flows to the left. When the button is 2, the water only flows
+    the button represents the direction of the water flow. When the button is M,
+    the water will flow evenly to the left and right sides. When the button is L,
+    the water only flows to the left. When the button is R, the water only flows
     to the right.\n You can verify it using the \"verify\" button.\r\nWhen you are
     ready, click the \"start\" button below to start the game."
 --- !u!222 &81981175
@@ -13488,7 +13488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &538917824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17058,7 +17058,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &695397573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18219,7 +18219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &754893996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18451,7 +18451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &766094916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18923,7 +18923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &781248844
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20856,7 +20856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: L
 --- !u!222 &847242703
 CanvasRenderer:
   m_ObjectHideFlags: 0
