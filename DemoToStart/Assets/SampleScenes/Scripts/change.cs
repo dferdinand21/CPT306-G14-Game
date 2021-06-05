@@ -61,13 +61,13 @@ public class change : MonoBehaviour
     {
         btn = GameObject.Find("Button_object").GetComponent<Button>();
         tt = btn.transform.Find("Text").GetComponent<Text>();
-        tt.text = "0";
+        tt.text = "L";
         num = 0;
     }
 
     public void Reset(Text tt, int num)
     {
-        tt.text = "0";
+        tt.text = "L";
         num = 0;
     }
 
@@ -81,21 +81,24 @@ public class change : MonoBehaviour
         }
         else
         {
-            a_num = 0;
+            a_num = 0;   
         }
-        a_tt.text = a_num.ToString();
+        
 
         if (a_num == 0)
         {
+            a_tt.text = "L";
             sub1[0] = 40;
         }
         else if (a_num == 1)
         {
+            a_tt.text = "M";
             sub1[0] = (40 / 2);
             total_b = (40 / 2);
         }
         else
         {
+            a_tt.text = "R";
             total_b = 40;
         }
         sub_1 = sub1[0] + sub1[1];
@@ -111,19 +114,21 @@ public class change : MonoBehaviour
         {
             b_num = 0;
         }
-        b_tt.text = b_num.ToString();
         
         if (b_num == 0)
         {
-            sub_1 += total_b;
+            b_tt.text = "L";
+            sub_1 += total_b;    
         }
         else if (b_num == 1)
         {
+            b_tt.text = "M";
             sub1[1] = (total_b / 2);
             sub2[0] = (total_b / 2);
         }
         else
         {
+            b_tt.text = "R";
             sub2[0] += total_b;
         }
         sub_1 = sub1[0] + sub1[1];
@@ -141,19 +146,21 @@ public class change : MonoBehaviour
         {
             c_num = 0;
         }
-        c_tt.text = c_num.ToString();
         
         if (c_num == 0)
         {
+            c_tt.text = "L";
             total_d = 80;
         }
         else if (c_num == 1)
         {
+            c_tt.text = "M";
             total_d = (80 / 2);
             sub4[0] = (80 / 2);
         }
         else
         {
+            c_tt.text = "R";
             sub4[0] = 80;
         }
         sub_4 = sub4[0] + sub4[1];
@@ -170,19 +177,21 @@ public class change : MonoBehaviour
         {
             d_num = 0;
         }
-        d_tt.text = d_num.ToString();
         
         if (d_num == 0)
         {
+            d_tt.text = "L";
             sub2[1] = total_d;
         }
         else if (d_num == 1)
         {
+            d_tt.text = "M";
             sub2[1] = (total_d / 2);
             sub_3 = (total_d / 2);
         }
         else
         {
+            d_tt.text = "R";
             sub_3 = total_d;
         }
         sub_2 = sub2[0] + sub2[1];
@@ -200,19 +209,21 @@ public class change : MonoBehaviour
         {
             e_num = 0;
         }
-        e_tt.text = e_num.ToString();
         
         if (e_num == 0)
         {
+            e_tt.text = "L";
             total_f = 40;
         }
         else if (e_num == 1)
         {
+            e_tt.text = "M";
             total_f = (40 / 2);
             sub5[1] = (40 / 2);
         }
         else
         {
+            e_tt.text = "R";
             sub5[1] = 40;
         }
         sub_5 = sub5[0] + sub5[1];
@@ -229,19 +240,21 @@ public class change : MonoBehaviour
         {
             f_num = 0;
         }
-        f_tt.text = f_num.ToString();
         
         if (e_num == 0)
         {
+            f_tt.text = "L";
             sub4[1] = total_f;
         }
         else if (e_num == 1)
         {
+            f_tt.text = "M";
             sub4[1] = (total_f / 2);
             sub5[0] = (total_f / 2);
         }
         else
         {
+            f_tt.text = "R";
             sub5[0] = total_f;
         }
         sub_4 = sub4[0] + sub4[1];
